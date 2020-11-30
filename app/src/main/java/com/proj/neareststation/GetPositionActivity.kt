@@ -76,8 +76,8 @@ class GetPositionActivity : AppCompatActivity() {
                 {
                     val lat = editTextTextLatitude.text.toString();
                     val lon = editTextTextLongitude.text.toString();
-                    Log.i(TAG, "Start DiplayStationActivity")
-                    val intent= Intent(this@GetPositionActivity, DiplayStationActivity::class.java)
+                    Log.i(TAG, "Start DisplayStationActivity")
+                    val intent= Intent(this@GetPositionActivity, DisplayStationActivity::class.java)
                     intent.putExtra("lat", lat)
                     intent.putExtra("lon", lon)
                     startActivity(intent)

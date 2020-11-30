@@ -21,8 +21,7 @@
 
 
         <activity
-            android:name=".DiplayStationActivity"
-            android:label="@string/title_activity_diplay_station"
+            android:name=".DisplayStationActivity"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
