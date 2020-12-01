@@ -59,7 +59,7 @@ class GetPositionActivity : AppCompatActivity() {
                     {
                         val data = CheckLocation()
                         try {
-                            Log.i(TAG, "Ready to execute API call")
+                            Log.i(TAG, "CheckLocation : Ready to execute API call")
                             data.execute(lat, lon)
                         } catch (e: Exception){
                             e.printStackTrace()

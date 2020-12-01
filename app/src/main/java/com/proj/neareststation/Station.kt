@@ -9,7 +9,4 @@ data class Station(
     val distance: Int,
     val iconClass: String) {
 
-    /*public val bitmap : Bitmap? = BitmapFactory.decodeFile("C:\\Users\\Kevin\\" +
-                "AndroidStudioProjects\\NearestStation" +
-                "\\app\\src\\main\\res\\drawable\\adr.png")*/
 }

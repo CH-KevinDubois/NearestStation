@@ -34,6 +34,16 @@ class StationsAdapter (private val stations: ArrayList<Station>) :
         holder.address.text = station.address
         holder.distance.text = station.distance.toString()
 
+        when (station.iconClass) {
+            "sl-icon-type-adr" -> holder.picture.setImageResource(R.drawable.adr)
+            "sl-icon-type-tram" -> holder.picture.setImageResource(R.drawable.tram)
+            "sl-icon-type-funicular" -> holder.picture.setImageResource(R.drawable.funicular)
+            "sl-icon-type-bus" -> holder.picture.setImageResource(R.drawable.bus)
+            "sl-icon-type-train" -> holder.picture.setImageResource(R.drawable.train)
+            else -> {
+                holder.picture.setImageResource(R.drawable.unknown)
+            }
+        }
         //holder.picture.setImageBitmap(station.bitmap)
     }
     override fun getItemCount(): Int {
