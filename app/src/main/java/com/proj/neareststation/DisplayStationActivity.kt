@@ -35,7 +35,7 @@ class DisplayStationActivity : AppCompatActivity() {
 
 
         stations.clear()
-        
+
         //Appel à l'API
         val data = getStationsWithAPI()
         try {
@@ -45,20 +45,14 @@ class DisplayStationActivity : AppCompatActivity() {
             e.printStackTrace()
         }
 
-        //textView.setText(lat.toString(), TextView.BufferType.EDITABLE);
-
-
         val recyclerView: RecyclerView = findViewById(R.id.recyclerViewStationItems)
-        //val stationsAdapter = StationsAdapter(stations)
+
         val layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
         recyclerView.itemAnimator = DefaultItemAnimator()
         recyclerView.adapter = stationsAdapter
 
-        //stations.add(Station(1, "Zytgloggelaube 2, Bern", 19, "sl-icon-type-adr"))
-        //stations.add(Station(2, "Bern, Zytglogge", 51, "sl-icon-type-tram"))
         Log.i(TAG, "stations : " + stationsAdapter.itemCount)
-        //stationsAdapter.notifyDataSetChanged()
 
     }
 
@@ -109,10 +103,6 @@ class DisplayStationActivity : AppCompatActivity() {
             try {
 
                 val JSONarray = JSONArray(resultAPICall)
-
-                //val results = jSONObject.getJSONArray("results")
-                //val components = results.getJSONObject(0).getJSONObject("components")
-                //val countryCode = components.getString("country_code")
 
                 for (i in 0 until JSONarray.length()) {
                     val item = JSONarray.getJSONObject(i)

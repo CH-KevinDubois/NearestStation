@@ -194,7 +194,6 @@ class GetPositionActivity : AppCompatActivity() {
 
                 e.printStackTrace()
 
-            }
-        }
+            }        }
     }
 }
