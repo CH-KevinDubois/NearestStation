@@ -13,4 +13,4 @@ Rechercher les stations de transport suisses les plus proches
 
 ## Ebauche du layouts
 
-![Ebauche](.\app\src\main\res\drawable\Ebauche.jpg)
+![Ebauche](./app/src/main/res/drawable/ebauche.jpg)
